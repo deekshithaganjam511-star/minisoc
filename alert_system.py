@@ -61,11 +61,11 @@ with open("alert_system/alerts.json", "w") as f:
     json.dump(top_alerts, f, indent=2)
 
 # --- Summary ---
-print(f"✅ Alert Manager Complete")
+print(f" Alert Manager Complete")
 print(f"Total Alerts Generated: {len(final_alerts)}")
 print(f"\nSeverity Breakdown:")
 print(final_alerts["severity"].value_counts())
 print(f"\nTop 5 Highest Priority Alerts:")
 print(final_alerts[["alert_id", "user", "ip", "severity", "risk_score", "priority_score"]].head())
-print(f"\n✅ Saved to data/final_alerts.csv")
-print(f"✅ Top 50 alerts saved to alert_system/alerts.json")
+print(f"\n Saved to data/final_alerts.csv")
+print(f"Top 50 alerts saved to alert_system/alerts.json")

@@ -69,3 +69,4 @@ print(f"\nTop 5 Highest Priority Alerts:")
 print(final_alerts[["alert_id", "user", "ip", "severity", "risk_score", "priority_score"]].head())
 print(f"\n Saved to data/final_alerts.csv")
 print(f"Top 50 alerts saved to alert_system/alerts.json")
+# MiniSOC Alert Manager
